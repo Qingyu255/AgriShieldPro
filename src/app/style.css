@@ -1,0 +1,156 @@
+.sign-up {
+  background-color: rgba(255, 255, 255, 1);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.sign-up .div {
+  background: linear-gradient(180deg, rgb(114, 221, 72) 0%, rgb(254.03, 255, 254.07) 100%);
+  background-color: rgba(255, 255, 255, 1);
+  height: 896px;
+  position: relative;
+  width: 414px;
+}
+
+.sign-up .overlap-group {
+  border-radius: 8px;
+  height: 336px;
+  left: 47px;
+  position: absolute;
+  top: 465px;
+  width: 320px;
+}
+
+.sign-up .panel {
+  background-color: #ffffff;
+  border-radius: 8px;
+  height: 336px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  width: 320px;
+}
+
+.sign-up .button {
+  all: unset;
+  /* background-image: url(./BG.png); */
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  height: 46px;
+  left: 35px;
+  position: absolute;
+  top: 241px;
+  width: 250px;
+}
+
+.sign-up .text {
+  color: #ffffff;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 15px;
+  font-weight: 600;
+  left: 81px;
+  letter-spacing: 0.06px;
+  line-height: 22px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.sign-up .request-a-ride-anyqh {
+  color: transparent;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 25px;
+  font-weight: 700;
+  height: 101px;
+  left: 17px;
+  letter-spacing: 0.36px;
+  line-height: 35px;
+  position: absolute;
+  text-align: center;
+  top: 33px;
+  width: 297px;
+}
+
+.sign-up .text-wrapper {
+  color: #000000;
+}
+
+.sign-up .span {
+  color: #000000;
+  font-size: 24px;
+}
+
+.sign-up .text-wrapper-2 {
+  color: #5bb339;
+  font-size: 21.5px;
+}
+
+.sign-up .help-you-find-the-pe {
+  color: #746f6f;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 22px;
+  letter-spacing: 0.28px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  top: 167px;
+  width: 276px;
+}
+
+.sign-up .slider {
+  height: 9px;
+  left: 190px;
+  position: absolute;
+  top: 834px;
+  width: 53px;
+}
+
+.sign-up .element {
+  background-color: #666666;
+  border-radius: 2.5px;
+  height: 5px;
+  left: 33px;
+  position: absolute;
+  top: 2px;
+  width: 5px;
+}
+
+.sign-up .element-2 {
+  background-color: #666666;
+  border-radius: 2.5px;
+  height: 5px;
+  left: px;
+  position: absolute;
+  top: 2px;
+  width: 5px;
+}
+
+.sign-up .img {
+  height: 9px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.sign-up .text-wrapper-3 {
+  color: #000000;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 28px;
+  font-weight: 700;
+  height: 34px;
+  left: 32px;
+  letter-spacing: 0.36px;
+  line-height: 34px;
+  position: absolute;
+  text-align: center;
+  top: 33px;
+  white-space: nowrap;
+}

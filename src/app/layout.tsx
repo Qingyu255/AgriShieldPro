@@ -1,7 +1,11 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import {Providers} from "./providers"
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
+const customFont = "'Roboto Flex', sans-serif";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,7 +20,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      
+      <body className={inter.className}>
+        <Providers>
+          <div className='bg-[#ffffff] '>
+            <Navbar />
+            <div className="flex-grow min-h-screen">
+              {children}
+            </div>
+            <Footer />
+          </div>
+        </Providers>
+      </body>
+      
     </html>
   )
 }
