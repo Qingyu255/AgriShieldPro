@@ -1,16 +1,39 @@
-import React from "react"
+"use client"
+import React, { useContext, useEffect, useState } from "react"
 import Link from "next/link"
 import Image from 'next/image'
 import {Avatar, AvatarIcon} from "@nextui-org/react"
-import {Button} from "@nextui-org/react";
+import {Button} from "@nextui-org/react"
+import { LoginContext } from "../app/providers"
 
 export default function Navbar() {
-    const isLoggedIn = false
+    const { isLoggedIn, setLoggedIn, isSigningUp, setSigningUp } = useContext(LoginContext)
+    const [shouldShowButton, setShouldShowButton] = useState(true);
+
+    // var shouldShowButton = true
+    useEffect(() => {
+        if (isSigningUp) {
+          console.log(isSigningUp);
+          setShouldShowButton(!isSigningUp);
+        }
+      }, [isSigningUp]);
+    
+
+    function handleLogin() {
+        // setLoggedIn(!isLoggedIn)
+        if (!isLoggedIn) {
+            setSigningUp(true)
+
+        }
+        
+        
+    }
+    // const isLoggedIn = false
     return (
         <>
             <div className="flex bg-[rgb(255,255,255)] items-center rounded-b-md">
                 <div className="p-5">
-                    <Link href='/home' className="flex flex-row justify-center items-center gap-1 text-2xl font-bold">
+                    <Link href='/' className="flex flex-row justify-center items-center gap-1 text-2xl font-bold">
                         <Image
                             src="/agrishield_logo.png" // Assuming the logo is in the public directory
                             alt="Logo"
@@ -29,22 +52,26 @@ export default function Navbar() {
                         <Link href="/home">Home</Link>
                     </li> */}
                     {isLoggedIn?
+                        <Link href="/home">
+                            <Avatar
+                                icon={<AvatarIcon />}
+                                classNames={{
+                                base: "bg-gradient-to-br from-[#ffffff] to-[#72dd48]",
+                                icon: "text-black/80",
+                                }}
+                                isBordered
+                            />
+                        </Link>
+                        :
+                        shouldShowButton &&
                         <li className="flex items-center">
-                            <Link href="/getstarted" className="font-medium">
-                                <Button size="md">
+                            <Link href="/signup" className="font-medium">
+                                <Button size="md" onClick={handleLogin}>
                                     Login / Sign Up
                                 </Button> 
                             </Link>
                         </li>
-                        :
-                        <Avatar
-                            icon={<AvatarIcon />}
-                            classNames={{
-                            base: "bg-gradient-to-br from-[#ffffff] to-[#72dd48]",
-                            icon: "text-black/80",
-                            }}
-                            isBordered
-                        />
+                        
                     }
                 </ul>
                     
