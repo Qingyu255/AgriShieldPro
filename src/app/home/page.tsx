@@ -24,10 +24,12 @@ export default function page() {
   return (
     <>
         <div className='flex flex-col gap-5 m-4 mb-10'>
+
             <FarmScoreCard />
             <PerformanceCard/>
+            
             <InfoCard />
-            <div className='flex flex-row justify-center items-center gap-4'>       
+            <div className='flex flex-row justify-center items-center gap-4 '>       
                 <Riskprofile_homecard risklevel='High' riskscore={75} />
                 <AnalyticsHomecard />
             </div>

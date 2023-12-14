@@ -26,7 +26,7 @@ export default function page() {
       }
   return (
     <div className='flex flex-col gap-5 m-4'>
-        <div>
+        <div className='flex justify-center flex-col md:items-center'>
             <h1 className="text-2xl font-semibold pb-3 pl-0.5">My Current Plan</h1>
             <MyPlanCard 
                 planName={plan.planName} 

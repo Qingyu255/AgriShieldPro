@@ -46,7 +46,7 @@ export default function page() {
         <div className='flex items-center justify-center'>
             <ScoreBreakdownCard riskscore={763} premiumPayable={44}/>
         </div>
-        <div className='w-full text-left px-2'>
+        <div className='w-full text-left px-2 md:flex justify-center items-center'>
             <Button variant="link" colorScheme="blue" className='underline'>
                 How is my Farm Score calculated?
             </Button>
@@ -54,7 +54,7 @@ export default function page() {
         
         <div>
             {dummyData.datasets.map((dataset, index) => (
-                <div key={index}className='py-2 ml-3'>
+                <div key={index}className='py-2 ml-3 md:flex flex-col justify-center items-center'>
                     <h2 className='font-semibold pb-1'>{dataset.label}</h2>
                     <LineChart chartData={{ title:"title", labels: dummyData.labels, datasets: [dataset] }} />
                 </div>
