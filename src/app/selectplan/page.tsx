@@ -1,12 +1,12 @@
 "use client"
 import React from 'react'
 import PlanCard from '@/components/planselector/PlanCard'
+import Link from 'next/link'
 import { ArrowBackIcon } from "@chakra-ui/icons"
-import { useRouter } from "next/navigation"
+
 import { ButtonGroup, Button } from "@chakra-ui/react"
 import PlanSelector from '@/components/planselector/PlanSelector'
-const page = () => {
-    const router = useRouter()
+export default function page () {
     const insurancePlans = [
         {
           planName: 'Rural Shield Insurance',
@@ -41,18 +41,17 @@ const page = () => {
     ]
   return (
     <div className='flex justify-center flex-col'>
-        {/* Insert back Button */}
         <div className='p-3.5'>
+            <Link href="/home">
             <Button
                 variant="outline"
                 className='bg-[#FF6B35] flex justify-center items-center'
-                onClick={() => router.back()}
             >
                 <ArrowBackIcon />
             </Button>
+            </Link>
         </div>
         <PlanSelector />
     </div>
   )
 }
-export default page
