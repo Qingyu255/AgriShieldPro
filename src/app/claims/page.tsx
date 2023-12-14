@@ -6,11 +6,11 @@ import { FaClipboardList, FaHistory, FaRegFileAlt, FaSearchDollar } from 'react-
 interface ClaimCardProps {
     title: string;
     description: string;
-    icon: IconType;
+    icon: String;
     onClick: () => void; // Specify that onClick is a function that returns void
   }
 
-function ClaimCard({ title, description, icon }) {
+function ClaimCard({ title, description, icon } : ClaimCardProps) {
 
   return (
     <Box p={5} borderRadius="lg" _hover={{ boxShadow: 'md' }} cursor="pointer" className='border-2 border-[#4CB5AB]'>

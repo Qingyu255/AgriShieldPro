@@ -92,7 +92,7 @@ const Login = () => {
                   // onClick={() => router.back()}
               >
                   <h1 className="font-medium text-sm text-slate-500">
-                      Don't have an account? Sign Up Now
+                      Don&#39;t have an account? Sign Up Now
                   </h1>
                   
               </Button>

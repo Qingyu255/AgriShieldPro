@@ -17,7 +17,7 @@ export default function SensorCard() {
           Get Your AgrishieldPro Sensor For Free
         </Text>
         <Text color="gray.600">
-            Our sensor helps you monitor your farm's health and optimise for the best insurance rates.
+            Our sensor helps you monitor your farm&#39;s health and optimise for the best insurance rates.
    
         </Text>
         <Link href="/onboarding/requestiotdevice">
