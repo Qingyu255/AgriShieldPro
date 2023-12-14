@@ -56,7 +56,7 @@ export default function page() {
             {dummyData.datasets.map((dataset, index) => (
                 <div key={index}className='py-2 ml-3'>
                     <h2 className='font-semibold pb-1'>{dataset.label}</h2>
-                    <LineChart chartData={{ labels: dummyData.labels, datasets: [dataset] }} />
+                    <LineChart chartData={{ title:"title", labels: dummyData.labels, datasets: [dataset] }} />
                 </div>
             ))}
         </div>

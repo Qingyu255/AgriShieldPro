@@ -1,6 +1,6 @@
 import React from 'react'
 import BarChart from '@/components/charts/BarChart'
-import Analytics_homecard from '@/components/homecards/Analytics_homecard'
+import AnalyticsHomecard from '@/components/homecards/AnalyticsHomecard'
 import Riskprofile_homecard from '@/components/homecards/MyPlanCard'
 import FarmScoreCard from '@/components/farmscore/FarmScoreCard'
 import InfoCard from '@/components/homecards/InfoCard'
@@ -29,7 +29,7 @@ export default function page() {
             <InfoCard />
             <div className='flex flex-row justify-center items-center gap-4'>       
                 <Riskprofile_homecard risklevel='High' riskscore={75} />
-                <Analytics_homecard weather='Sunny' soilQuality='Good' />
+                <AnalyticsHomecard />
             </div>
             {/* <div className='flex justify-center items-center'>
                 <div className='pr-12 mr-12 text-xl font-semibold'>

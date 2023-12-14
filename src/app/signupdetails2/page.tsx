@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='flex justify-center items-center flex flex-col'
+    <div className='flex justify-center items-center flex-col'
     style={{
       height: '100vh', // Make sure it covers the full height
       width: '100vw', // Make sure it covers the full width

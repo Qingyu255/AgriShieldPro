@@ -1,13 +1,13 @@
 "use client"
-import React from 'react';
-import { SimpleGrid, Box, VStack, Text, Button, useColorModeValue, Icon } from '@chakra-ui/react';
-import { FaClipboardList, FaHistory, FaRegFileAlt, FaSearchDollar } from 'react-icons/fa';
+import React from 'react'
+import { SimpleGrid, Box, VStack, Text, Button, useColorModeValue, Icon } from '@chakra-ui/react'
+import { FaClipboardList, FaHistory, FaRegFileAlt, FaSearchDollar } from 'react-icons/fa'
+import { IconType } from 'react-icons'
 
 interface ClaimCardProps {
     title: string;
     description: string;
-    icon: String;
-    onClick: () => void; // Specify that onClick is a function that returns void
+    icon: IconType;
   }
 
 function ClaimCard({ title, description, icon } : ClaimCardProps) {
