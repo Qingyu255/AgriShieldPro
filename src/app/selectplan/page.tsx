@@ -5,7 +5,7 @@ import { ArrowBackIcon } from "@chakra-ui/icons"
 import { useRouter } from "next/navigation"
 import { ButtonGroup, Button } from "@chakra-ui/react"
 import PlanSelector from '@/components/planselector/PlanSelector'
-const Page = () => {
+const page = () => {
     const router = useRouter()
     const insurancePlans = [
         {
@@ -55,3 +55,4 @@ const Page = () => {
     </div>
   )
 }
+export default page

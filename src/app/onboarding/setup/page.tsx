@@ -79,3 +79,5 @@ const page = () => {
         </VStack>
       )
     }
+
+ export default page
