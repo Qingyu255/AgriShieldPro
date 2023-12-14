@@ -18,7 +18,7 @@ export default function Home() {
 
         </Image>
         <h2 className="py-5 m-2 text-center text-small text-slate-400">
-          Get Tailored Agriculture Insurance Coverage with ShopeeAgrisurance
+          Get Tailored Agriculture Insurance Coverage with AgriShieldPro
         </h2>
         <Link href="/signup" className="w-full">
           <Button fullWidth className="bg-[#4CB5AB]">
