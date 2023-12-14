@@ -76,7 +76,7 @@ export default function SignUpDetails() {
         }}
       >
         <VStack h="80%" justify="center">
-          <VStack as={Form} shadow="2xl" w="100%" bg="gray.50" p="4" className="rounded-xl">
+          <VStack as={Form} shadow="2xl" w="100%" bg="gray.50" p="4" pt="6" className="rounded-xl">
             <Heading className="text-center">Let Us Get To Know You Better</Heading>
 
             {/* <h1 className="text-left font-bold w-full">Farm Location</h1>
