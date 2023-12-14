@@ -1,7 +1,20 @@
 'use client'
 import { createContext, useContext, useState } from 'react'
 import {NextUIProvider} from '@nextui-org/react'
+import { ChakraProvider } from '@chakra-ui/react'
+import { extendTheme } from "@chakra-ui/react"
 import useLocalStorageState from "use-local-storage-state"
+
+const theme = extendTheme({
+  colors: {
+    customOrange: {
+      500: "#FF6B35"
+    },
+    customGreen: {
+      500: "#4CB5AB"
+    }
+  }
+});
 
 interface LoginContextType {
   isLoggedIn: boolean;
@@ -26,7 +39,9 @@ export function Providers({children}: { children: React.ReactNode }) {
   return (
     <LoginContext.Provider value={contextValue}>
       <NextUIProvider>
-        {children}
+        <ChakraProvider theme={theme}>
+          {children}
+        </ChakraProvider>
       </NextUIProvider>
     </LoginContext.Provider>
   )

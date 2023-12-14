@@ -32,15 +32,15 @@ export default function Navbar() {
     return (
         <>
             <div className="flex bg-[rgb(255,255,255)] items-center rounded-b-md">
-                <div className="p-5">
-                    <Link href='/' className="flex flex-row justify-center items-center gap-1 text-2xl font-bold">
-                        <Image
+                <div className="p-5 px-3">
+                    <Link href='/' className="flex flex-row justify-center items-center gap-1 text-xl font-bold">
+                    <Image
                             src="/agrishield_logo.png" // Assuming the logo is in the public directory
                             alt="Logo"
                             width={50}
                             height={50}
                         />
-                        AgriShield
+                        AgriShieldPro
                     </Link>
                 </div>
                 <div className="flex justify-end">
@@ -56,7 +56,7 @@ export default function Navbar() {
                             <Avatar
                                 icon={<AvatarIcon />}
                                 classNames={{
-                                base: "bg-gradient-to-br from-[#ffffff] to-[#72dd48]",
+                                base: "bg-gradient-to-br from-[#ffffff] to-[#4CB5AB]",
                                 icon: "text-black/80",
                                 }}
                                 isBordered
@@ -66,8 +66,8 @@ export default function Navbar() {
                         shouldShowButton &&
                         <li className="flex items-center">
                             <Link href="/signup" className="font-medium">
-                                <Button size="md" onClick={handleLogin}>
-                                    Login / Sign Up
+                                <Button size="md" onClick={handleLogin} className="font-semibold bg-[#FF6B35] text-white">
+                                    Sign Up
                                 </Button> 
                             </Link>
                         </li>

@@ -1,7 +1,10 @@
+import React from 'react'
 import BarChart from '@/components/charts/BarChart'
 import Analytics_homecard from '@/components/homecards/Analytics_homecard'
-import Riskprofile_homecard from '@/components/homecards/Riskprofile_homecard'
-import React from 'react'
+import Riskprofile_homecard from '@/components/homecards/MyPlanCard'
+import FarmScoreCard from '@/components/farmscore/FarmScoreCard'
+import InfoCard from '@/components/homecards/InfoCard'
+import PerformanceCard from '@/components/homecards/PerformanceCard'
 
 const dummyData = {
     title: "This is a dummy chart",
@@ -11,7 +14,7 @@ const dummyData = {
         data: [20, 25, 35, 46, 33, 30, 44], // Array of data values
         label: "Premium Amount", // Label for the dataset
         backgroundColor: "#f7faf8", // Background color for the bars
-        borderColor: "#66fa98", // Border color for the bars
+        borderColor: "#4CB5AB", // Border color for the bars
         borderWidth: 2.7, // Border width for the bars
       }
     ]
@@ -20,12 +23,15 @@ const dummyData = {
 export default function page() {
   return (
     <>
-        <div className='flex flex-col gap-5 m-4'>
-            <div className='flex flex-row justify-center items-center gap-4 '>
+        <div className='flex flex-col gap-5 m-4 mb-10'>
+            <FarmScoreCard />
+            <PerformanceCard/>
+            <InfoCard />
+            <div className='flex flex-row justify-center items-center gap-4'>       
+                <Riskprofile_homecard risklevel='High' riskscore={75} />
                 <Analytics_homecard weather='Sunny' soilQuality='Good' />
-                <Riskprofile_homecard risklevel='High' riskscore={60} />
             </div>
-            <div className='flex justify-center items-center'>
+            {/* <div className='flex justify-center items-center'>
                 <div className='pr-12 mr-12 text-xl font-semibold'>
                     Insurance Premium Breakdown
                 </div>
@@ -40,7 +46,7 @@ export default function page() {
                     </div>
                 </div>
                 
-            </div>
+            </div> */}
         </div>
     </>
 

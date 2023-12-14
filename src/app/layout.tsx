@@ -23,12 +23,17 @@ export default function RootLayout({
       
       <body className={inter.className}>
         <Providers>
-          <div className='bg-[#ffffff] '>
-            <Navbar />
+          <div className='bg-[#ffffff]'>
+            
             <div className="flex-grow min-h-screen">
-              {children}
+              <Navbar />
+              <div className='mb-[70px]'>
+                {children}
+              </div>
+              
+              <Footer/>
             </div>
-            <Footer />
+            
           </div>
         </Providers>
       </body>
