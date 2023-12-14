@@ -17,7 +17,7 @@ import { useRouter } from 'next/navigation'
 import { FaBluetooth, FaPowerOff, FaMobileAlt, FaLink } from 'react-icons/fa'
 
 
-const Page = () => {
+const page = () => {
     const [isConnecting, setIsConnecting] = useState(false)
     const toast = useToast()
     const router = useRouter()
