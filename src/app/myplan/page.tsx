@@ -10,7 +10,7 @@ export default function page() {
         labels: ["Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], // Array of labels
         datasets: [
             {
-            data: [20, 25, 35, 46, 33, 30, 44], // Array of data values
+            data: [120, 125, 135, 146, 133, 130, 144], // Array of data values
             label: "Premium Amount", // Label for the dataset
             backgroundColor: "#f7faf8", // Background color for the bars
             borderColor: "#4CB5AB", // Border color for the bars
@@ -33,7 +33,7 @@ export default function page() {
                 companyName={plan.companyName} 
                 description={plan.description} 
                 logoSrc={plan.logoSrc}
-                premiumAmount={"December Premium Payable: IDR " + 44 + "k"}
+                premiumAmount={"December Premium Payable: IDR " + 144 + "k"}
             />
         </div>
         <div className='flex justify-center items-center'>
