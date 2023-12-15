@@ -33,7 +33,7 @@ export default function page() {
                 companyName={plan.companyName} 
                 description={plan.description} 
                 logoSrc={plan.logoSrc}
-                premiumAmount={"December Premium Payable: IDR " + 44}
+                premiumAmount={"December Premium Payable: IDR " + 44 + "k"}
             />
         </div>
         <div className='flex justify-center items-center'>
@@ -44,7 +44,7 @@ export default function page() {
         <div className='flex justify-center items-center flex-col'>
             <div className='flex justify-center items-center bg-[#e6e6e6] rounded-xl h-[296px] w-[400px] p-3 flex-col'>
                 <div className='w-full'>
-                    <h1 className='font-medium'>December Premium: IDR 44.00</h1>
+                    <h1 className='font-medium'>December Premium: IDR 144k</h1>
                 </div>
                 <div className='flex items-center mt-1'>
                     <BarChart chartData={dummyData} />

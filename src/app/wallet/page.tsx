@@ -7,7 +7,7 @@ export default function page() {
     <div className='px-6'>
         <VStack bg="#4CB5AB" p={4} borderRadius="lg" boxShadow="lg" color="white" spacing={3} align="stretch" className='mb-5'>
         <Text fontSize="base">Available Balance</Text>
-        <Text fontSize="3xl" fontWeight="bold">RM450.54</Text>
+        <Text fontSize="3xl" fontWeight="bold">IDR200k</Text>
         
         </VStack>
         <VStack  align="stretch" className='flex justify-center items-center'>
